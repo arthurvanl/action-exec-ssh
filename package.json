@@ -1,0 +1,16 @@
+{
+  "name": "actions-exec-ssh",
+  "version": "1.0.0",
+  "description": "Excute SSH Commands",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Arthur",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.8.0",
+    "ssh2shell": "^1.9.10"
+  }
+}
