@@ -1,5 +1,8 @@
 name: 'Run SSH Commands'
 description: 'This action allows you to run ssh commands.'
+branding:
+  icon: 'chevron-right'
+  color: 'black'
 inputs: 
   host: #input id
     description: 'The vps hostname'
