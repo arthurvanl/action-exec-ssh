@@ -13,20 +13,8 @@ inputs:
   password: #input id
     description: 'THe vps ssh password'
     required: true
-  ssh_1: #input id
-    description: 'The ssh command string'
-    required: true
-    default: 'ls -h'
-  ssh_2: #input id
-    description: 'The ssh command string'
-    required: true
-    default: 'ls -h'
-  ssh_3: #input id
-    description: 'The ssh command string'
-    required: true
-    default: 'ls -h'
-  ssh_4: #input id
-    description: 'The ssh command string'
+  commands: 
+    description: 'The ssh commands'
     required: true
     default: 'ls -h'
 runs: 
