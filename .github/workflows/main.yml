@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: Run SSH Commands
       id: ssh
-      uses: arthurvanl/action-exec-ssh@v1
+      uses: ./
       with:
         host: ${{ secrets.HOST }}
         username: root
