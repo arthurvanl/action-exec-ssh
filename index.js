@@ -7,6 +7,7 @@ try {
     const commands = core.getInput('commands');
     if(commands){
         console.log(commands)
+        console.log(typeof commands)
     } else {
         const host = {
             server: {
