@@ -1,6 +1,12 @@
 name: Execute SSH Commands
 
-on: [push, pull_request, workflow_dispatch]
+on: 
+  push:
+    branches:
+      - master
+  pull_request:
+    branches: 
+      - master
 
 jobs:
   build:
