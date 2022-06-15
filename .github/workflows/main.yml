@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: Run SSH Commands
       id: ssh
-      uses: ./
+      uses: ./.github/actions/action-exec-ssh@develop
       with:
         host: ${{ secrets.HOST }}
         username: root
