@@ -3,18 +3,17 @@ name: Execute SSH Commands
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  my-job: 
-    build:
-      runs-on: ubuntu-latest
-      steps:
-      - name: Run SSH Commands
-        id: ssh
-        uses: my-job: ./.github/workflows/action.yml
-        with:
-          host: ${{ secrets.HOST }}
-          username: root
-          password: ${{ secrets.PASSWORD }}
-          commands: |
-            ls -a
-            pm2 list
-            pm2 restart 0
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run SSH Commands
+      id: ssh
+      uses: arthurvanl/action-exec-ssh@v2-dev
+      with:
+        host: ${{ secrets.HOST }}
+        username: root
+        password: ${{ secrets.PASSWORD }}
+        commands: |
+          ls -a
+          pm2 list
+          pm2 restart 0
