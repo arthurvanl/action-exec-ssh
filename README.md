@@ -23,9 +23,13 @@ jobs:
         host: ${{ secrets.HOST }}
         username: root
         password: ${{ secrets.PASSWORD }}
-        ssh_1: '<SSH_COMMAND>'
-        ssh_2: '<SSH_COMMAND>'
-        ssh_3: '<SSH_COMMAND>'
-        ssh_4: '<SSH_COMMAND>'
+        commands: 'SSH_COMMAND'
 
+```
+The `commands` keyword can have multiple commands:
+
+```commands: |
+     ls -a
+     apt update
+     apt upgrade
 ```
