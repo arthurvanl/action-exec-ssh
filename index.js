@@ -15,7 +15,7 @@ try {
             userName: core.getInput('username'),
             password: core.getInput('password')
         },
-        commands: [items],
+        commands: items,
     }
 
     /* creating new SSH client */
