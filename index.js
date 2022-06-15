@@ -7,7 +7,7 @@ try {
     const commands = core.getInput('commands');
     if(commands){
         console.log(commands)
-        let items = commands.split(" ");
+        let items = commands.split("\n");
         console.log(items)
     } else {
         const host = {
