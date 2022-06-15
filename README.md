@@ -28,7 +28,8 @@ jobs:
 ```
 The `commands` keyword can have multiple commands:
 
-```commands: |
+```
+commands: |
      ls -a
      apt update
      apt upgrade
