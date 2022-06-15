@@ -25,9 +25,6 @@ try {
     SSH.connect(function(sessionText){
         /* Response text */
         console.log(sessionText);
-        if(sessionText == 'Ready'){
-            console.log("Successfully executed ssh commands!");
-        }
     });
 
 } catch (error) {
